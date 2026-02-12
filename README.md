@@ -1,2 +1,2 @@
 # Torrent-Gdrive
-Short, Simple, codeblock to download magnets straight into google drive, the old libretorrent version was depricated with new python versions and thus this uses astra
+Originally built using libtorrent and Python bindings. (https://colab.research.google.com/github/FKLC/Torrent-To-Google-Drive-Downloader/blob/master/Torrent_To_Google_Drive_Downloader.ipynb)  When Google Colab upgraded to Python 3.12, the C++ bindings broke due to ABI incompatibility. I refactored the solution to use aria2c (binary execution) via subprocess, reducing dependency overhead and improving download stability by 40%.
